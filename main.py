@@ -6,7 +6,7 @@ import time
 from dotenv import load_dotenv
 from discord.ext import commands
 
-TOKEN = os.getenv('ODYxMDA0MzYzODkxNjA1NTM1.YODezQ.Bd8chdrScPosABui4HPqJAjEUEM')
+TOKEN = os.getenv('ODYxMDA0MzYzODkxNjA1NTM1.YODezQ.qadgElTTTI8HK718QkTwIMatbkY')
 
 client = discord.Client()
 
