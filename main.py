@@ -1,6 +1,4 @@
 import os
-os.system('git init')
-os.system('git add .')
 import random
 import discord
 import os
