@@ -45,14 +45,14 @@ async def on_message(message):
             # this was in a cog
             # The below code bans player.
 
-        @client.event
+        @client.command
         @commands.has_permissions(ban_members=True)
         async def ban(self, ctx, member: discord.Member, *, reason=None):
             await member.ban(reason=reason)
             await bot.send(f'User {member} has been kicked')
 
     # The below code unbans player.
-    @client.event
+    @client.command
     @commands.has_permissions(administrator=True)
     async def unban(self, ctx, *, member):
         banned_users = await ctx.guild.bans()
@@ -68,7 +68,7 @@ async def on_message(message):
 
 
 # The below code kicks player
-@client.event
+@client.command
 @commands.has_permissions(kick_members=True)
 async def kick(self, ctx, member: discord.Member, *, reason):
     await member.kick(reason=reason)
